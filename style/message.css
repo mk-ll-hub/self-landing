@@ -1,0 +1,212 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+  margin-top: 130px;
+background: rgba(14, 14, 14, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 50px;
+  backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(120,130,255,0.8);
+  box-shadow: 0 0 12px rgba(120,130,255,0.3);
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical; /* можно растягивать вниз */
+}
+
+
+.label {
+    color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-shadow:
+    0 0 6px rgba(120,130,255,0.25),
+    0 0 12px rgba(120,130,255,0.15),
+    0 0 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+    min-height: 44px;
+
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    background: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        background-color 0.5s ease;
+
+    will-change: transform;
+}
+.submit-btn:hover {
+    box-shadow:
+        0 0px 40px rgba(255, 255, 255, 0.6),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.submit-btn:active {
+    box-shadow:
+        0 0px 10px rgba(255, 255, 255, 0.4),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.tg {
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  opacity: 20%;
+  box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        opacity 0.5s ease,
+        background-color 0.5s ease;
+
+    will-change: transform;
+}
+.tgicon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  
+}
+.tg:hover {
+    opacity: 100%;
+    box-shadow:
+        0 0px 30px rgba(255, 255, 255, 0.6),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+.tg:active {
+    box-shadow:
+        0 0px 10px rgba(255, 255, 255, 0.4),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.socialsblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label1 {
+    color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+
+  text-shadow: 0 0 4px rgba(159, 165, 255, 0.25);
+}
+.linksblock {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.textblock {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  * {
+  -webkit-tap-highlight-color: transparent;
+}
+  .contactus2 {
+    display: none;
+  }
+
+  .contact-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  .tg {
+    height: 50px;
+    width: 50px;
+  }
+  .tgicon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  input,
+textarea {
+  font-size: 14px;
+}
+
+.submit-btn {
+  font-size: 14px;
+}
+.label1 {
+  font-size: 13px;
+}
+}
